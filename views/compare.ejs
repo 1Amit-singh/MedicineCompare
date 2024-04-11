@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medicine Lists</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        font-family: sans-serif;
+      }
+      #cards-container {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+        /* background-color: aqua; */
+      }
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 1rem;
+        border: 1px solid black;
+        border-radius: 20px;
+        padding: 2rem;
+        width: 400px;
+      }
+      .card-image,
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        border-radius: 20px;
+      }
+      .buy-link {
+        border-radius: 0.5rem;
+        padding: 1rem 2.5rem;
+        text-decoration: none;
+        background-color: #3bb896;
+        color: #fff;
+      }
+      .btn-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+      }
+      .company-name {
+        font-size: 1.5rem;
+        color: #3bb896;
+      }
+      h6 {
+        text-align: center;
+        margin: 2rem auto;
+        font-size: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h6>List of Madicines</h6>
+    <div id="cards-container">
+      <% medicineList.forEach(item => { %>
+      <div class="card">
+        <img src="<%= item.image %>" alt="" />
+        <h1><%= item.medicine_name %></h1>
+        <p>Rs. <%= item.discounted_price %></p>
+        <div class="btn-container">
+          <a class="buy-link" href="<%= item.medicine_link %>"> Buy </a>
+          <p class="company-name"><%= item.company %></p>
+        </div>
+      </div>
+      <% }) %>
+    </div>
+    <!-- <script>
+      const cardsData = [
+        {
+          name: "Paracetamol",
+        },
+        {
+          name: "Crocin",
+        },
+        {
+          name: "Dolo",
+        },
+        {
+          name: "Napa",
+        },
+        {
+          name: "Saridon",
+        },
+        {
+          name: "Disprin",
+        },
+        {
+          name: "Combiflam",
+        },
+        {
+          name: "Calpol",
+        },
+        {
+          name: "Sumo",
+        },
+        {
+          name: "Zerodol",
+        },
+        {
+          name: "Voveran",
+        },
+        {
+          name: "Brufen",
+        },
+        {
+          name: "Ibuprofen",
+        },
+        {
+          name: "Aspirin",
+        },
+        {
+          name: "Naproxen",
+        },
+        {
+          name: "Diclofenac",
+        },
+        {
+          name: "Aceclofenac",
+        },
+        {
+          name: "Etoricoxib",
+        },
+        {
+          name: "Celecoxib",
+        },
+      ];
+
+      function createCard(cardData) {
+        const card = document.createElement("div");
+        card.classList.add("card");
+
+        const image = document.createElement("img");
+        image.classList.add("card-image");
+        image.src =
+          "https://images.unsplash.com/photo-1505533321630-975218a5f66f?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+        card.appendChild(image);
+
+        const subheading2 = document.createElement("p");
+        subheading2.innerHTML = "p2";
+        card.appendChild(subheading2);
+
+        const description = document.createElement("p");
+        description.innerHTML = "p3";
+        card.appendChild(description);
+
+        const link = document.createElement("a");
+        link.innerHTML = "This is link";
+        card.appendChild(link);
+        return card;
+      }
+
+      const container = document.getElementById("cards-container");
+
+      cardsData.forEach((cardData) => {
+        const card = createCard(cardData);
+        container.appendChild(card);
+      });
+
+      // function renderCards() {
+      //   const container = document.getElementById("cards-container");
+      //   container.innerHTML = "";
+
+      //   renderCards();
+      // }
+    </script> -->
+  </body>
+</html>

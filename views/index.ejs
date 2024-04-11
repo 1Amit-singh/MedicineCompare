@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body><!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- main page style -->
+        <style>
+            
+            #main{
+                width: 100%;
+            }
+            #nav{
+            display:flex;
+            background:rgb(16,132,126);
+            border: 1px solid rgb(16,132,126);
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+            justify-content: space-between;
+            padding: 0 3%;
+            align-items: center;
+            height: 150px;
+            }
+            .second{  display: flex;
+                gap: 2.5rem;
+                color: #fff;    
+            }
+            .second>div{
+                cursor: pointer;
+                font-size: 1.1rem;
+                
+            }
+            #nav>div:hover{
+            text-decoration: underline;
+            }
+            .cart{
+                display: flex;
+                align-items: center;
+                gap: 4px;
+            }
+            .search-btn{
+                font-size: 1.3rem;
+                padding: 1rem 3rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            #booksec{
+                width: 100%;
+                height: 200px;
+                display: flex;
+            }
+            #booksec>div{
+                width: 35%;
+                height: 100%;
+                margin: 0 1% 0 1%;
+                background-color: #cef0ea;
+                border-radius: 20px;
+                display: flex;
+                
+            }
+            .order1{
+                width:50%;
+                height: 100%;
+            }
+            .order1>h2{
+                text-align: center;
+                margin-top:30%;
+                font-family: Arial, Helvetica, sans-serif;
+                color: gray;
+            }
+            .order2{
+                width: 60%;
+                height: 100%;
+            }
+            .pic{
+                width: 100%;
+                height: 100%;
+            }
+            button{
+                background:rgb(59,184,150);
+                color:white;
+                width:130px;
+                height:50px;
+                margin-left:15%;
+                margin-top:20px;
+                border-radius: 10px;
+                border: 0;
+            }
+            #off_bar{
+                width: 100%;
+                height: 100px;
+                margin-top: 90px;
+                display: flex;
+                border-radius: 10px;
+                background-color: #a291fa;
+            }
+            .box1{
+                width: 20%;
+                height:60%;
+                margin: 20px 0 0 25px;
+            }
+            .box2{
+                width: 55%;
+                margin-left: 30px;
+            } 
+            .box2>p{
+                color:white;
+                font-size: 25px;
+                margin-top: 8px;
+            }
+            .box3{
+                width: 15%;
+                height: 150px;
+                margin-top: -50px;
+                margin-left: 3%;
+            }
+            #sfty{
+                width: 100%;
+                height: 120px;
+                margin-top: 70px;
+                display: flex;
+            }
+            .step{
+                width: 25%;
+                height: 100%;
+            } 
+            .temp{
+                width: 13%;
+                height: 100%;
+                margin-left: 30px;
+            }
+            #offer{
+                width: 100%;
+                height: 220px;
+                margin-top: 70px;
+        
+            }
+            .top{
+                margin-top: 20px;
+                width: 100%;
+                height: 40px;
+                display: flex;
+                
+            }
+            .pic3{
+                width: 3%;
+                height: 100%;
+                
+            }
+            .top_sid{
+                width: 12%;
+                height: 100%;
+                margin-left: 67%;
+            }
+            .top_sid>h2{
+                margin-top: 2px;
+                color: teal;
+            }
+            .top>h2{
+                margin-top: 4px; 
+                margin-left: 22px;
+                color: #4f585e;
+            }
+            #freq{
+                width: 100%;
+                height: 300px;
+                background-color: #d4e2fa;
+                border: 1px solid #d4e2fa;
+                margin-top: 70px;
+            }
+            .lbox{
+                width: 100%;
+                height: 15%;
+                margin-top: 50px;
+        
+                display: flex;
+        
+            }
+            .lbox>h2{
+                margin-top: 4px; 
+                margin-left: 5px;
+                color: #4f585e;
+                
+            }
+            .lbox_sid{
+                width: 8%;
+                height: 100%;
+                margin-left: 67%;
+                border: 1px solid blue;
+            }
+            .pic_box{
+                width: 100%;
+                height: 200px;
+                display: flex;
+        
+            }
+            .ftext{
+                width: 20%;
+                height: 70%;
+                margin-top: 15px;
+        
+            }
+            .freq_slid{
+                width: 80%;
+                height: 130%;
+                margin-top: 15px;
+                border: 1px solid red;
+            }
+            .ftext>p{
+                color: rgb(88, 85, 85);
+                font-size: 18px;
+                
+                margin-top: 2px;
+            }
+            .mgn{
+                margin-top: 5px;
+                margin-bottom: 0%;
+            }
+            #branda{
+                width: 100%;
+                height: 40px;
+                display: flex;
+                margin-top: 50px;
+               
+                
+            }
+            #branda>h2{
+                margin-top: 1px;
+                margin-left: 6px;
+                color: rgb(88, 85, 85);
+            }
+            .brand_sid{
+                width: 8%;
+                height: 100%;
+                margin-left: 77%;
+                border: 1px solid blue;
+            }
+            .feat_brand{
+                margin-top: 30px;
+                
+            }
+            #look_bar{
+                width: 100%;
+                height: 150px;
+                margin-top: 70px;
+            }
+            #deals{
+                width: 100%;
+                height: 350px;
+                background-color: #fff2f2;
+                border: 1px solid #fff2f2;
+                
+            }
+            #timr>h2{
+                margin-top: 25px;
+                margin-left: 35px;
+                color: rgb(88, 85, 85);
+            }
+           
+            
+            #timr{
+                width: 100%;
+                height: 60px;
+                display: flex;
+        
+                margin-top: 35px;
+            }
+            .f_brand{
+        
+                height: 78%;
+            }
+            .off_slid{
+                width: 100%;
+                height: 80%;
+            }
+            
+            .swp{
+                width: 100%;
+                border-radius: 20px;
+            }
+            </style>
+    
+        <style>
+            
+            #offersec{
+                display: flex;
+                overflow: auto;
+                
+                 /* white-space: nowrap; */
+            }
+            #outer{
+                display: flex;
+                
+                width: 25%;
+                border: 1px solid black;
+                margin-left: 10px;
+                border-radius: 10px;
+                
+              
+    
+            }
+            #outer>div:nth-child(1){
+                width:30% ;
+                
+            }
+            #outer>div:nth-child(2){
+                width:60% ;
+                
+                white-space: nowrap;
+                overflow: hidden;
+                /* text-overflow: ellipsis; */
+                
+            }
+        </style>
+        <!-- slid show part style -->
+        <style>
+    
+            /* Slideshow container */
+            .slideshow-container {
+              max-width: 100%;
+              position: relative;
+              margin: auto;
+            }
+            .mySlides>img{
+                width: 100%;
+            }
+            
+            /* Next & previous buttons */
+            .prev1, .next1 {
+              cursor: pointer;
+              position: absolute;
+              top: 50%;
+              width: auto;
+              padding: 16px;
+              margin-top: -22px;
+              color: white;
+              font-weight: bold;
+              font-size: 18px;
+              transition: 0.6s ease;
+              border-radius: 0 3px 3px 0;
+              user-select: none;
+            }
+            
+            /* Position the "next button" to the right */
+            .next1 {
+              right: 0;
+              border-radius: 3px 0 0 3px;
+              
+            }
+            
+            /* On hover, add a black background color with a little bit see-through */
+            .prev1:hover, .next1:hover {
+              background-color: rgba(0,0,0,0.8);
+              
+            }
+            
+            /* Caption text */
+            .text {
+              color: #f2f2f2;
+              font-size: 15px;
+              padding: 8px 12px;
+              position: absolute;
+              bottom: 8px;
+              width: 100%;
+              text-align: center;
+              
+            }
+            
+            
+            /* The dots/bullets/indicators */
+            .dot1 {
+              cursor: pointer;
+              height: 8px;
+              width: 8px;
+              margin: -10px 4px 20px 4px;
+              background-color: #bbb;
+              border-radius: 50%;
+              display: inline-block;
+             
+              /* transition: background-color 0.6s ease; */
+            }
+            
+            .active, .dot1:hover {
+              background-color: #717171;
+            }
+            
+            
+            
+            
+            
+            /* On smaller screens, decrease text size */
+            @media only screen and (max-width: 300px) {
+              .prev1, .next1,.text {font-size: 11px}
+            }
+        </style>
+    
+        <style>
+            #brand{
+                display: flex;
+                overflow: auto;
+                
+            }
+            .brandnam{
+                
+                
+                margin-left: 20px;
+            }
+        </style>
+    
+    <!-- metadata -->
+        <style>  
+        #meddata{
+            display: flex;
+            overflow: auto;
+            /* background-color: white; */
+            /* width: 100%; */
+        }
+        .fontbold{
+            font-weight: bold;
+        }
+        .outerbx{
+            /* width: 50%; */
+            margin-left: 10px;
+           
+            /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
+            
+            
+            
+        }
+        .outerbx>div:nth-child(1){
+            /* width: 100%; */
+            /* height: 120px; */
+            
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+        .outerbx>div:nth-child(2){
+            overflow: hidden;
+            
+        }
+        .outerbx>div>img{
+            height: 100px;
+            /* width: 100%; */
+        }
+        .pricebx{
+            display: flex;
+            justify-content: space-between;
+        }
+        #textbx{
+            height: 50px;
+            overflow: hidden;
+        }
+       
+        </style>
+        <!-- last imagesetup -->
+        <style>
+            #lastimg{
+                width: 90%;
+                margin: auto;
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                
+            }
+            #lastboximg{
+                color: rgb(79,88,94);
+            }
+        </style>
+    
+        <!-- bottom -->
+        <style>
+            #lastborder{
+                width: 90%;
+                margin: auto;
+            }
+             #paracont >p,li{
+              color:grey;
+            }
+            #bottom{
+              display:grid;
+              grid-template-columns: repeat(4,1fr);
+              grid-gap:20px;
+            }
+            #bottom>div>div{
+              color:grey;
+            }
+            h3{
+              color:black;
+            }
+            #bottom>div:hover{
+              cursor: pointer;
+            }
+            
+            #social{
+              display:grid;
+              grid-template-columns: repeat(4,1fr);
+              grid-gap:10px;
+            }
+            
+            #social>div{
+              border-radius: 10px;
+              width:62px;
+              height:62px;
+              margin-top:50px;
+              box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            }
+            #social>div>img{
+              width:60px;
+              border-radius: 10px;
+            }
+            #payment{
+              display:grid;
+              grid-template-columns: repeat(12,1fr);
+            }
+            .oder1>button,.order2>button,.order3>button:hover{
+              cursor: pointer;
+            }
+            #view{
+              color:rgb(73, 162, 221);
+              margin-left:60%;
+            }
+            #view:hover{
+              text-decoration: underline;
+              cursor: pointer;
+            }
+            .second>div:hover{
+              cursor:pointer;
+            }
+
+            
+        </style>
+        
+    </head>
+    <body>
+        <div id="main">
+            <div id="nav">
+    
+                    <div class="second">
+                        <div  onclick="window.location.href='med.html'">Order Medicine</div>
+                        <div  onclick="window.location.href='health product.html'">HealthCare product</div>
+                        <div onclick="window.location.href='APackeges.html'">Lab Test</div>
+                        <div>Offers</div>
+                        <div onclick="window.location.href='signupmed.html'">Login/SignUp</div>
+                        <div  onclick="window.location.href='compare.html'">Compare Medicines</div>
+                        <div onclick="window.location.href='cartmed.html.html'" class="cart">
+                            <img src="https://assets.pharmeasy.in/web-assets/dist/21b0b5ba.svg">
+                            <span>Cart</span>
+                        </div>
+                    </div>
+
+                    <div class="one" style="width: clamp(200px, 500px, 80%);" >
+                        <form action="/medicine" method="post" style="display: flex; align-items: center; justify-content: center; gap: 2rem; ">
+                            <input type="text" name="medicine" placeholder="Enter Medicine Name" style="padding: 1rem; width: 100%; border-radius: .5rem; border: none;"/>
+                            <button type="submit" style="margin: 0;" class="search-btn" >Search</button>
+                        </form>
+                    </div>
+            </div>
+        <div >
+        
+            <div class="slideshow-container" onclick="window.location.href='home1.html'">
+    
+                <a class="prev1" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next1" onclick="plusSlides(1)">&#10095;</a>
+                
+                
+                
+                </div>
+                <div style="text-align:center">
+                  <span class="dot1" onclick="currentSlide(1)"></span> 
+                  <span class="dot1" onclick="currentSlide(2)"></span> 
+                  <span class="dot1" onclick="currentSlide(3)"></span> 
+                  <span class="dot1" onclick="currentSlide(2)"></span> 
+                  <span class="dot1" onclick="currentSlide(3)"></span> 
+                  <span class="dot1" onclick="currentSlide(3)"></span> 
+                </div>
+                <br>
+                <div id="booksec">
+                    <div>
+                        <div class="order1">
+                            <h2> order medicine</h2>
+                            <button onclick="window.location.href='med.html'">Order Now</button>
+                        </div>
+                        <div class="order2 "><img class="pic" src="https://assets.pharmeasy.in/web-assets/dist/7c645a8d.png?dim=186x0&dpr=1&q=100" alt=""></div>
+                    </div>
+                    <div>
+                        <div class="order1" style="background-color: #fdf2d2;">
+                            <h2 style="margin-top: 30px;">Healthcare product</h2>
+                            <button onclick="window.location.href='health product.html'">Order Now</button></div>
+                        <div class="order2" style="background-color: #fdf2d2"><img class="pic" src="https://assets.pharmeasy.in/web-assets/dist/c7c7095b.png?dim=186x0&dpr=1&q=100" alt=""></div>
+                    </div>
+                    <div>
+                        <div class="order1">
+                            <h2>Lab Tests</h2>
+                            <button onclick="window.location.href='APackeges.html'">Book Now</button>
+                        </div>
+                        <div class="order2"><img class="pic" src="https://assets.pharmeasy.in/web-assets/dist/e1d3ac1c.png?dim=186x0&dpr=1&q=100" alt=""></div>
+                    </div>
+                </div>
+                <div id="off_bar">
+                    <div class="box1"><img class="pic" src="https://assets.pharmeasy.in/web-assets/dist/e3db129c.png" alt=""></div>
+                    <div class="box2"><p>Save flat 5% extra on medicines & enjoy free delivery with PLUS membership</p></div>
+                    <div class="box3"> <img class="pic" src="https://assets.pharmeasy.in/web-assets/dist/b20b0932.png" alt=""></div>
+                </div>
+                <div id="sfty">
+                    <div class="step">
+                        <img class="pic" src="https://assets.pharmeasy.in/web-assets/dist/0ad2d80a.png" alt="">
+                    </div>
+                    <div class="temp">
+                        <img class="pic" src="https://assets.pharmeasy.in/web-assets/dist/6e630ccf.png">
+                    </div>
+                    <div class="temp">
+                        <img class="pic" src="https://assets.pharmeasy.in/web-assets/dist/c9bd8df2.png">
+                    </div>
+                    <div class="temp">
+                        <img class="pic" src="https://assets.pharmeasy.in/web-assets/dist/748e0da8.png">
+                    </div>
+                    <div class="temp">
+                        <img class="pic" src="https://assets.pharmeasy.in/web-assets/dist/aada0d0d.png">
+                    </div>
+                    <div class="temp">
+                        <img class="pic" src="https://assets.pharmeasy.in/web-assets/dist/091811c4.png">
+                    </div>
+                </div>
+                
+                <br>
+                
+    
+                <div class="top">
+                    <img class="pic3" src="https://assets.pharmeasy.in/web-assets/dist/67890676.svg" alt="">
+                    <h2 >Offers Just For You</h1>
+                    <div class="top_sid"><h2>See All offers</h2></div>
+                    
+                </div>
+                
+                <div class="feat_brand">
+                    <div id="offersec"></div>
+                </div>
+                
+    
+    
+         <div id="branda">
+            <h2>Featured Brands</h2>
+        </div>
+        <div id="brand"></div>
+        <br>
+        <div id="look_bar">
+            <img class="pic" src="https://cdn01.pharmeasy.in/dam/banner/banner/c5ae1494075-DesktopTrust.png?dim=1024x100&dpr=1&q=100" alt="">
+        </div>
+        <br>
+        <div id="deals">
+            <div id="timr">
+                <div><img src="https://assets.pharmeasy.in/web-assets/dist/cc9b301d.svg" alt=""></div>
+                <h2>Featured Brands</h2> 
+                <h3 id="view" onclick="window.location.href='med.html'">View All</h3>  
+            </div>
+           
+            <div id="meddata"></div>
+              
+            </div>
+        </div>
+        
+    
+        <br>
+        <div id="lastborder">
+            <div id="lastimg"></div>
+        <div id="paracont">
+            <h3>India's No. 1 Medicine Delivery App</h3>
+            <p>The concept of medicine home delivery has been taken to a new level by the PharmEasy online medicine delivery app. You can use the PharmEasy online medicine delivery app to browse through an extensive range of medicines. Each medicine undergoes a 3-step quality check.<br>
+             Whatever be your medicinal requirement, you are sure to locate it in this online pharmacy. All you have to do then is to add it to your cart and place the order. In 3 hours*, the medicines will be delivered to you. Indias beloved online medicine delivery app makes sure that you get your medicines in record time because we know how vital time is in any treatment. Sit back, and we will have all your medical necessities delivered to your doorstep.</p>
+            <h3>Online Medicine - Your Online Medical Store in India</h3>
+            <p>Tired of walking all the way to your local medicine store? Worried that going out is risky during the current times? Order medicines online at PharmEasy, Indias trusted online medicine app. With more than 1 lakh medicines always in stock, you are sure to find what you are looking for, and that too at affordable prices!
+     
+             Besides, extremely stringent sanitization norms are followed at your favourite online medical store. PharmEasy takes the safety of customers and employees very seriously.</p>
+             <h3>Reasons To Buy Medicine Online From PharmEasy</h3>
+             <ul>
+               <li>1,200+ cities and 20,000+ Pin codes served</li>
+               <li>Medicine delivery within 3 hours*</li>
+               <li>1 Lakh+ medicines available</li>
+               <li>Cash on delivery option available</li>
+               <li>Attractive offers</li>
+               <li>Cashback option through wallet</li>
+               <li>Stringent quality checks</li>
+               <li>Garnered the trust of more than 10 million users who have made an online purchase through PharmEasy</li>
+             </ul>
+             <h2>Order Medicines Online</h2>
+             <h3>Get 3-Step Quality-checked Medicines</h3>
+             <p>PharmEasy is a one-stop-shop for all your healthcare needs. We have 1L+ products for you to choose from. Buy medicines online at affordable prices from the comforts of your home in just a few clicks and get them delivered at your doorstep.
+               The entire process of shopping for medicines is hassle-free and convenient. All you have to do is search for the products you need on our website or app, add to cart and then proceed with the checkout process.
+               With our scheduled refill reminder, you dont even need to keep track of your refill dates.
+               Whats more, we have great offers, with added discounts and massive e-wallet cashbacks on purchasing medicines!</p>
+           </div>
+           <div id="bottom">
+            <div>
+                <div>
+                <div><h3>Company</h3></div>
+                <div>About US</div>
+                <div>Careers</div>
+                <div>Blog</div>
+                <div>Partner With PharmEasy</div>
+              </div>
+              <div>
+                <div><h3>Our Services</h3></div>
+                <div>Order Medicine</div>
+                <div>Healthcare Products</div>
+                <div>Lab Tests</div>
+              </div>
+            </div>
+            <div>
+              <div><h3>Featured Categories</h3></div>
+              <div>Covid Essentials</div>
+              <div>Healthcare Devices</div>
+              <div>Health Food and Drink</div>
+              <div>Personal Care</div>
+              <div>Ayurvedic Care</div>
+              <div>Mother and Baby Care</div>
+              <div>Accessories And Wearables</div>
+              <div>Skin Care</div>
+              <div>Diabetic Care</div>
+              <div>Health Condition</div>
+              <div>Sexual Wellness</div>
+              <div>Home Care</div>
+              <div>Fitness & Supplements</div>
+              <div>Elderly Care</div>
+              <div>Pet Care</div>
+            </div>
+            <div>
+               <div>
+                  <div><h3>Need Help</h3></div>
+                  <div>Browse All Medicines</div>
+                  <div>Browse All Molecules</div>
+                  <div>Browse All Cities & Areas</div>
+                  <div>FAQs</div>
+                </div>
+                <div>
+                  <div><h3>Policy Info</h3></div>
+                  <div>Editorial Policy</div>
+                  <div>Privacy Policy</div>
+                  <div>Vulnerability Disclosure Policy</div>
+                  <div>Terms and condition</div>
+                  <div>Customer Support Policy</div>
+                  <div>Return Policy</div>
+                </div>
+             </div>
+             <div id="social">
+               <div >
+                 <img id="insta" src="https://img.icons8.com/ios/2x/instagram-new--v3.gif">
+               </div>
+               <div>
+                <img src="https://img.icons8.com/ios/2x/facebook-circled.png">
+              </div>
+              <div>
+                <img src="https://img.icons8.com/ios/2x/youtube-play.png">
+              </div>
+              <div>
+                <img src="https://img.icons8.com/ios/2x/twitter--v3.gif">
+              </div>
+             </div>
+          </div>
+          <div>
+            <h3>Our Payment Partners</h3>
+            <div id="payment">
+              <div>
+                <img src="	https://pharmeasy.in/_next/image?url=%2Ficons%2Fgpay.svg&w=64&q=75">
+              </div>
+              <div>
+                <img src="	https://pharmeasy.in/_next/image?url=%2Ficons%2Fpaytm.svg&w=64&q=75">
+              </div>
+              <div>
+                <img src="	https://pharmeasy.in/_next/image?url=%2Ficons%2Famazon-pay.svg&w=64&q=75">
+              </div>
+              <div>
+                <img src="https://pharmeasy.in/_next/image?url=%2Ficons%2Fphonepe.svg&w=64&q=75">
+              </div>
+              <div>
+                <img src="https://pharmeasy.in/_next/image?url=%2Ficons%2Fmobikwik.svg&w=64&q=75">
+              </div>
+              <div>
+                <img src="https://pharmeasy.in/_next/image?url=%2Ficons%2Fairtel-money.svg&w=64&q=75">
+              </div>
+              <div>
+                <img src="https://pharmeasy.in/_next/image?url=%2Ficons%2Fola-money.svg&w=64&q=75">
+              </div>
+              <div>
+                <img src="https://pharmeasy.in/_next/image?url=%2Ficons%2Fmaestro.svg&w=64&q=75">
+              </div>
+              <div>
+                <img src="https://pharmeasy.in/_next/image?url=%2Ficons%2Fmastercard.svg&w=64&q=75">
+              </div>
+              <div>
+                <img src="	https://pharmeasy.in/_next/image?url=%2Ficons%2Fvisa.svg&w=64&q=75">
+              </div>
+              <div>
+                <img src="	https://pharmeasy.in/_next/image?url=%2Ficons%2Frupay.svg&w=64&q=75">
+              </div>
+              <div>
+                <img src="https://pharmeasy.in/_next/image?url=%2Ficons%2Fdiners.svg&w=64&q=75">
+              </div>
+            </div>
+          </div>
+        </div>
+    
+    </body>
+    </html>
+    
+
+  </body>
+</html>
