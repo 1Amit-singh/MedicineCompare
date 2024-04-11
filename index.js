@@ -33,7 +33,9 @@ app.post("/medicine", (req, res) => {
           company: item._source.Source,
         });
       });
-      res.render("compare", { medicineList: medicineList });
+      res.render(`${__dirname}/views/compare.ejs`, {
+        medicineList: medicineList,
+      });
       medicineList = [];
       // console.log(medicineList);
       // res.send(medicineList);
@@ -42,7 +44,7 @@ app.post("/medicine", (req, res) => {
 });
 
 app.get("/", (req, res) => {
-  res.render("index");
+  res.render(`${__dirname}/views/index.ejs`);
 });
 
 app.listen(3000, () => {
